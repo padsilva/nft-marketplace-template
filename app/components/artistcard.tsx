@@ -1,3 +1,5 @@
+import { Avatar } from "./avatar";
+
 export function ArtistCard({
   name,
   ranking,
@@ -7,13 +9,7 @@ export function ArtistCard({
 }) {
   return (
     <div className="p-5 flex flex-col items-center gap-5 bg-[#3B3B3B] rounded-[20px]">
-      <img
-        src={`/assets/${name}.png`}
-        alt={name}
-        className="rounded-full"
-        width={120}
-        height={120}
-      />
+      <Avatar size="big" name={name} />
       <div className="flex flex-col items-center gap-[5px]">
         <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
         <div className="flex items-center gap-2.5">

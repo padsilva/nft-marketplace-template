@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import { ArtistCard } from "~/components/artistcard";
 
+import { ArtistCard } from "~/components/artistcard";
+import { Avatar } from "~/components/avatar";
 import { Button } from "~/components/button";
 import { RocketLaunchIcon } from "~/icons/rocketlaunch";
 import { StorefrontIcon } from "~/icons/storefront";
@@ -75,13 +76,7 @@ export default function Index() {
             <div className="flex flex-col w-full p-5 rounded-b-[20px] bg-[#3B3B3B] gap-2.5">
               <h5 className="text-[22px] font-semibold">Space Walking</h5>
               <div className="flex gap-3">
-                <img
-                  src="/assets/animakid.png"
-                  alt="men avatar"
-                  className="rounded-full"
-                  width={24}
-                  height={24}
-                />
+                <Avatar name="animakid" />
                 <p>Animakid</p>
               </div>
             </div>
@@ -121,13 +116,7 @@ export default function Index() {
               <div className="w-full flex flex-col gap-2.5">
                 <h5 className="text-[22px] font-semibold">DSGN Animals</h5>
                 <div className="flex gap-3">
-                  <img
-                    src="/assets/mr fox.png"
-                    alt="men avatar"
-                    className="rounded-full"
-                    width={24}
-                    height={24}
-                  />
+                  <Avatar name="MrFox" />
                   <p>MrFox</p>
                 </div>
               </div>
@@ -156,13 +145,7 @@ export default function Index() {
               <div className="self-start flex flex-col gap-2.5">
                 <h5 className="text-[22px] font-semibold">Magic Mushrooms</h5>
                 <div className="flex gap-3">
-                  <img
-                    src="/assets/shroomie.png"
-                    alt="men avatar"
-                    className="rounded-full"
-                    width={24}
-                    height={24}
-                  />
+                  <Avatar name="shroomie" />
                   <p>Shroomie</p>
                 </div>
               </div>
@@ -191,13 +174,7 @@ export default function Index() {
               <div className="w-full flex flex-col gap-2.5">
                 <h5 className="text-[22px] font-semibold">Disco Machines</h5>
                 <div className="flex gap-3">
-                  <img
-                    src="/assets/robot_avatar.png"
-                    alt="men avatar"
-                    className="rounded-full"
-                    width={24}
-                    height={24}
-                  />
+                  <Avatar name="BeKind2Robots" />
                   <p>BeKind2Robots</p>
                 </div>
               </div>
@@ -228,7 +205,7 @@ export default function Index() {
             <ArtistCard name="GravityOne" ranking={3} />
             <ArtistCard name="juanie" ranking={4} />
             <ArtistCard name="BlueWhale" ranking={5} />
-            <ArtistCard name="mr fox" ranking={6} />
+            <ArtistCard name="MrFox" ranking={6} />
             <ArtistCard name="shroomie" ranking={7} />
             <ArtistCard name="robotica" ranking={8} />
             <ArtistCard name="RustyRobot" ranking={9} />
