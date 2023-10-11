@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { ArtistCard } from "~/components/artistcard";
 
 import { Button } from "~/components/button";
 import { RocketLaunchIcon } from "~/icons/rocketlaunch";
@@ -36,10 +37,10 @@ export default function Index() {
           </div>
         </nav>
       </header>
-      <main>
+      <main className="container mx-auto">
         {/* HERO SECTION */}
-        <div className="grid grid-cols-2 items-center justify-items-center py-20 px-32 gap-[30px]">
-          <div className="flex flex-col items-start gap-10">
+        <section className="grid grid-cols-2 items-center justify-items-center py-20 px-28 gap-[30px]">
+          <div className="flex flex-col items-start gap-10 flex-[1_0_0]">
             <div className="flex flex-col gap-5">
               <h1 className="text-[67px] font-semibold capitalize leading-tight">
                 Discover digital art & Collect NFTs
@@ -65,17 +66,17 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start">
             <img
               src="/assets/space_hero.png"
               alt="space hero"
               className="rounded-t-[20px] max-h-[401px]"
             />
-            <div className="flex flex-col self-stretch p-5 rounded-b-[20px] bg-[#3B3B3B] gap-2.5">
+            <div className="flex flex-col w-full p-5 rounded-b-[20px] bg-[#3B3B3B] gap-2.5">
               <h5 className="text-[22px] font-semibold">Space Walking</h5>
               <div className="flex gap-3">
                 <img
-                  src="/assets/men_avatar.png"
+                  src="/assets/animakid.png"
                   alt="men avatar"
                   className="rounded-full"
                   width={24}
@@ -85,17 +86,17 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* TRENDING COLLECTION SECTION */}
-        <div className="flex flex-col py-20 px-32 gap-[60px]">
-          <div className="self-start">
+        <section className="flex flex-col items-center py-20 gap-[60px]">
+          <div className="flex flex-col items-start gap-2.5 w-[1046px]">
             <h3 className="text-[38px] font-semibold">Trending Collection</h3>
             <p className="text-[22px] capitalize">
               Checkout our weekly updated trending collection.
             </p>
           </div>
-          <div className="grid grid-cols-3 items-center justify-items-center gap-[30px]">
+          <div className="flex justify-center gap-[30px]">
             <div className="flex flex-col gap-[15px] items-center">
               <img
                 src="/assets/dog.png"
@@ -106,105 +107,136 @@ export default function Index() {
                 <img
                   src="/assets/cat.png"
                   alt="cat"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <img
                   src="/assets/bear.png"
                   alt="bear"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
                   <h5 className="text-[22px] font-semibold">1025+</h5>
                 </div>
               </div>
-              <div className="self-start flex flex-col gap-2.5">
-                <h5 className="text-[22px] font-semibold">Happy Robots</h5>
+              <div className="w-full flex flex-col gap-2.5">
+                <h5 className="text-[22px] font-semibold">DSGN Animals</h5>
                 <div className="flex gap-3">
                   <img
-                    src="/assets/men_avatar.png"
+                    src="/assets/mr fox.png"
                     alt="men avatar"
                     className="rounded-full"
                     width={24}
                     height={24}
                   />
-                  <p>Animakid</p>
+                  <p>MrFox</p>
                 </div>
               </div>
             </div>
-            {/* TODO: replace this duplicated information */}
             <div className="flex flex-col gap-[15px] items-center">
               <img
-                src="/assets/dog.png"
+                src="/assets/mushroom.png"
                 alt="dog"
                 className="rounded-[20px] max-h-[330px]"
               />
               <div className="grid grid-cols-3 gap-[15px]">
                 <img
-                  src="/assets/cat.png"
+                  src="/assets/mushroom_2.png"
                   alt="cat"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <img
-                  src="/assets/bear.png"
+                  src="/assets/mushroom_3.png"
                   alt="bear"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
                   <h5 className="text-[22px] font-semibold">1025+</h5>
                 </div>
               </div>
               <div className="self-start flex flex-col gap-2.5">
-                <h5 className="text-[22px] font-semibold">Happy Robots</h5>
+                <h5 className="text-[22px] font-semibold">Magic Mushrooms</h5>
                 <div className="flex gap-3">
                   <img
-                    src="/assets/men_avatar.png"
+                    src="/assets/shroomie.png"
                     alt="men avatar"
                     className="rounded-full"
                     width={24}
                     height={24}
                   />
-                  <p>Animakid</p>
+                  <p>Shroomie</p>
                 </div>
               </div>
             </div>
-            {/* TODO: replace this duplicated information */}
             <div className="flex flex-col gap-[15px] items-center">
               <img
-                src="/assets/dog.png"
+                src="/assets/robot.png"
                 alt="dog"
                 className="rounded-[20px] max-h-[330px]"
               />
               <div className="grid grid-cols-3 gap-[15px]">
                 <img
-                  src="/assets/cat.png"
+                  src="/assets/robot_2.png"
                   alt="cat"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <img
-                  src="/assets/bear.png"
+                  src="/assets/robot_3.png"
                   alt="bear"
-                  className="rounded-[20px]"
+                  className="rounded-[20px] max-h-[100px]"
                 />
                 <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
                   <h5 className="text-[22px] font-semibold">1025+</h5>
                 </div>
               </div>
-              <div className="self-start flex flex-col gap-2.5">
-                <h5 className="text-[22px] font-semibold">Happy Robots</h5>
+              <div className="w-full flex flex-col gap-2.5">
+                <h5 className="text-[22px] font-semibold">Disco Machines</h5>
                 <div className="flex gap-3">
                   <img
-                    src="/assets/men_avatar.png"
+                    src="/assets/robot_avatar.png"
                     alt="men avatar"
                     className="rounded-full"
                     width={24}
                     height={24}
                   />
-                  <p>Animakid</p>
+                  <p>BeKind2Robots</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* TOP CREATORS SECTION */}
+        <section className="flex flex-col items-center py-20 gap-[60px]">
+          <div className="flex justify-between items-end w-[1046px]">
+            <div>
+              <h3 className="text-[38px] font-semibold">Top Creators</h3>
+              <p className="text-[22px] capitalize">
+                Checkout Top Rated Creators on the NFT Marketplace
+              </p>
+            </div>
+            <Button
+              label="View Rankings"
+              type="secondary"
+              variant="outlined"
+              href="#"
+              Icon={RocketLaunchIcon}
+            />
+          </div>
+          <div className="grid grid-cols-4 grid-rows-3 gap-[30px]">
+            <ArtistCard name="keepitreal" ranking={1} />
+            <ArtistCard name="DigiLab" ranking={2} />
+            <ArtistCard name="GravityOne" ranking={3} />
+            <ArtistCard name="juanie" ranking={4} />
+            <ArtistCard name="BlueWhale" ranking={5} />
+            <ArtistCard name="mr fox" ranking={6} />
+            <ArtistCard name="shroomie" ranking={7} />
+            <ArtistCard name="robotica" ranking={8} />
+            <ArtistCard name="RustyRobot" ranking={9} />
+            <ArtistCard name="animakid" ranking={10} />
+            <ArtistCard name="dotgu" ranking={11} />
+            <ArtistCard name="ghiblier" ranking={12} />
+          </div>
+        </section>
       </main>
     </>
   );
