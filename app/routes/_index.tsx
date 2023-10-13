@@ -3,9 +3,18 @@ import type { MetaFunction } from "@remix-run/node";
 import { ArtistCard } from "~/components/artistcard";
 import { Avatar } from "~/components/avatar";
 import { Button } from "~/components/button";
+import { CategoriesCard } from "~/components/categoriescard";
+import { BasketballIcon } from "~/icons/basketball";
+import { CameraIcon } from "~/icons/camera";
+import { MagicWandIcon } from "~/icons/magicwand";
+import { MusicNoteIcon } from "~/icons/musicnote";
+import { PaintBrushIcon } from "~/icons/paintbrush";
+import { PlanetIcon } from "~/icons/planet";
 import { RocketLaunchIcon } from "~/icons/rocketlaunch";
 import { StorefrontIcon } from "~/icons/storefront";
+import { SwatchesIcon } from "~/icons/swatches";
 import { UserIcon } from "~/icons/user";
+import { VideoCameraIcon } from "~/icons/videocamera";
 
 export const meta: MetaFunction = () => {
   return [
@@ -183,35 +192,54 @@ export default function Index() {
         </section>
 
         {/* TOP CREATORS SECTION */}
-        <section className="flex flex-col items-center py-20 gap-[60px]">
-          <div className="flex justify-between items-end w-[1046px]">
-            <div>
-              <h3 className="text-[38px] font-semibold">Top Creators</h3>
-              <p className="text-[22px] capitalize">
-                Checkout Top Rated Creators on the NFT Marketplace
-              </p>
+        <section className="flex flex-col items-center py-20">
+          <div className="flex flex-col gap-[60px] w-[1046px]">
+            <div className="flex justify-between items-end">
+              <div>
+                <h3 className="text-[38px] font-semibold">Top Creators</h3>
+                <p className="text-[22px] capitalize">
+                  Checkout Top Rated Creators on the NFT Marketplace
+                </p>
+              </div>
+              <Button
+                label="View Rankings"
+                type="secondary"
+                variant="outlined"
+                href="#"
+                Icon={RocketLaunchIcon}
+              />
             </div>
-            <Button
-              label="View Rankings"
-              type="secondary"
-              variant="outlined"
-              href="#"
-              Icon={RocketLaunchIcon}
-            />
+            <div className="grid grid-cols-4 grid-rows-3 gap-[30px]">
+              <ArtistCard name="keepitreal" ranking={1} />
+              <ArtistCard name="DigiLab" ranking={2} />
+              <ArtistCard name="GravityOne" ranking={3} />
+              <ArtistCard name="juanie" ranking={4} />
+              <ArtistCard name="BlueWhale" ranking={5} />
+              <ArtistCard name="MrFox" ranking={6} />
+              <ArtistCard name="shroomie" ranking={7} />
+              <ArtistCard name="robotica" ranking={8} />
+              <ArtistCard name="RustyRobot" ranking={9} />
+              <ArtistCard name="animakid" ranking={10} />
+              <ArtistCard name="dotgu" ranking={11} />
+              <ArtistCard name="ghiblier" ranking={12} />
+            </div>
           </div>
-          <div className="grid grid-cols-4 grid-rows-3 gap-[30px]">
-            <ArtistCard name="keepitreal" ranking={1} />
-            <ArtistCard name="DigiLab" ranking={2} />
-            <ArtistCard name="GravityOne" ranking={3} />
-            <ArtistCard name="juanie" ranking={4} />
-            <ArtistCard name="BlueWhale" ranking={5} />
-            <ArtistCard name="MrFox" ranking={6} />
-            <ArtistCard name="shroomie" ranking={7} />
-            <ArtistCard name="robotica" ranking={8} />
-            <ArtistCard name="RustyRobot" ranking={9} />
-            <ArtistCard name="animakid" ranking={10} />
-            <ArtistCard name="dotgu" ranking={11} />
-            <ArtistCard name="ghiblier" ranking={12} />
+        </section>
+
+        {/* BROWSE CATEGORIES SECTION */}
+        <section className="flex flex-col items-center py-20">
+          <div className="flex flex-col gap-[60px] w-[1046px]">
+            <h3 className="text-[38px] font-semibold">Browse Categories</h3>
+            <div className="grid grid-cols-4 grid-rows-2 gap-[30px]">
+              <CategoriesCard name="art" Icon={PaintBrushIcon} />
+              <CategoriesCard name="collectibles" Icon={SwatchesIcon} />
+              <CategoriesCard name="music" Icon={MusicNoteIcon} />
+              <CategoriesCard name="photography" Icon={CameraIcon} />
+              <CategoriesCard name="video" Icon={VideoCameraIcon} />
+              <CategoriesCard name="utility" Icon={MagicWandIcon} />
+              <CategoriesCard name="sport" Icon={BasketballIcon} />
+              <CategoriesCard name="virtual worlds" Icon={PlanetIcon} />
+            </div>
           </div>
         </section>
       </main>
