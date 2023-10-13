@@ -1,0 +1,11 @@
+export { BasketballIcon } from "./basketball";
+export { CameraIcon } from "./camera";
+export { MagicWandIcon } from "./magicwand";
+export { MusicNoteIcon } from "./musicnote";
+export { PaintBrushIcon } from "./paintbrush";
+export { PlanetIcon } from "./planet";
+export { RocketLaunchIcon } from "./rocketlaunch";
+export { StorefrontIcon } from "./storefront";
+export { SwatchesIcon } from "./swatches";
+export { UserIcon } from "./user";
+export { VideoCameraIcon } from "./videocamera";
