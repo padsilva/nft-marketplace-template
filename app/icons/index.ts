@@ -1,5 +1,6 @@
 export { BasketballIcon } from "./basketball";
 export { CameraIcon } from "./camera";
+export { EyeIcon } from "./eye";
 export { MagicWandIcon } from "./magicwand";
 export { MusicNoteIcon } from "./musicnote";
 export { PaintBrushIcon } from "./paintbrush";

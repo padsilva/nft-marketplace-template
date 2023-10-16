@@ -1,2 +1,3 @@
 export { ArtistCard } from "./artist";
-export { CategoriesCard } from "./categories";
+export { CategoryCard } from "./category";
+export { NFTCard } from "./nft";

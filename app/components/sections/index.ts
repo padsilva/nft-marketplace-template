@@ -1,5 +1,6 @@
-export { BrowseCategories } from "./browsecategories";
-export { Hero } from "./hero";
-export { Navigation } from "./navigation";
-export { TopCreators } from "./topcreators";
-export { TrendingCollection } from "./trendingcollection";
+export { BrowseCategoriesSection } from "./browsecategories";
+export { DiscoverMoreSection } from "./discovermore";
+export { HeroSection } from "./hero";
+export { NavigationSection } from "./navigation";
+export { TopCreatorsSection } from "./topcreators";
+export { TrendingCollectionSection } from "./trendingcollection";

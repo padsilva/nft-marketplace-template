@@ -1,6 +1,6 @@
 import { Avatar } from "../avatar";
 
-export function TrendingCollection() {
+export function TrendingCollectionSection() {
   return (
     <section className="flex flex-col items-center py-20 gap-[60px]">
       <div className="flex flex-col items-start gap-2.5 w-[1046px]">

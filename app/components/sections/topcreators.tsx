@@ -2,12 +2,12 @@ import { ArtistCard } from "../cards";
 import { Button } from "../button";
 import { RocketLaunchIcon } from "~/icons";
 
-export function TopCreators() {
+export function TopCreatorsSection() {
   return (
     <section className="flex flex-col items-center py-20">
       <div className="flex flex-col gap-[60px] w-[1046px]">
         <div className="flex justify-between items-end">
-          <div>
+          <div className="flex flex-col gap-2.5">
             <h3 className="text-[38px] font-semibold">Top Creators</h3>
             <p className="text-[22px] capitalize">
               Checkout Top Rated Creators on the NFT Marketplace

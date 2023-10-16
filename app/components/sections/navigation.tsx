@@ -1,7 +1,7 @@
 import { Button } from "../button";
 import { StorefrontIcon, UserIcon } from "~/icons";
 
-export function Navigation() {
+export function NavigationSection() {
   return (
     <nav className="flex justify-between">
       <div className="flex items-center gap-2.5">

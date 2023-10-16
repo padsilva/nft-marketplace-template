@@ -2,7 +2,7 @@ import { Avatar } from "../avatar";
 import { Button } from "../button";
 import { RocketLaunchIcon } from "~/icons";
 
-export function Hero() {
+export function HeroSection() {
   return (
     <section className="grid grid-cols-2 items-center justify-items-center py-20 px-28 gap-[30px]">
       <div className="flex flex-col items-start gap-10 flex-[1_0_0]">

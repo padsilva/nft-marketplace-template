@@ -1,12 +1,14 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import {
-  BrowseCategories,
-  Hero,
-  Navigation,
-  TopCreators,
-  TrendingCollection,
+  BrowseCategoriesSection,
+  DiscoverMoreSection,
+  HeroSection,
+  NavigationSection,
+  TopCreatorsSection,
+  TrendingCollectionSection,
 } from "~/components/sections";
+import { EyeIcon } from "~/icons";
 
 export const meta: MetaFunction = () => {
   return [
@@ -19,13 +21,14 @@ export default function Index() {
   return (
     <>
       <header className="px-12 py-5">
-        <Navigation />
+        <NavigationSection />
       </header>
       <main className="container mx-auto">
-        <Hero />
-        <TrendingCollection />
-        <TopCreators />
-        <BrowseCategories />
+        <HeroSection />
+        <TrendingCollectionSection />
+        <TopCreatorsSection />
+        <BrowseCategoriesSection />
+        <DiscoverMoreSection />
       </main>
     </>
   );
