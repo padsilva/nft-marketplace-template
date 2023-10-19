@@ -4,6 +4,7 @@ import {
   BrowseCategoriesSection,
   DiscoverMoreSection,
   HeroSection,
+  HowItWorksSection,
   NFTHighlightSection,
   NavigationSection,
   TopCreatorsSection,
@@ -30,6 +31,7 @@ export default function Index() {
         <BrowseCategoriesSection />
         <DiscoverMoreSection />
         <NFTHighlightSection />
+        <HowItWorksSection />
       </main>
     </>
   );

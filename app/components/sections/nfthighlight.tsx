@@ -4,7 +4,7 @@ import { EyeIcon } from "~/icons";
 
 export function NFTHighlightSection() {
   return (
-    <div
+    <section
       className="bg-cover bg-no-repeat h-auto"
       style={{
         backgroundColor: "lightgray",
@@ -40,6 +40,6 @@ export function NFTHighlightSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,6 +1,7 @@
 export { BrowseCategoriesSection } from "./browsecategories";
 export { DiscoverMoreSection } from "./discovermore";
 export { HeroSection } from "./hero";
+export { HowItWorksSection } from "./howitworks";
 export { NavigationSection } from "./navigation";
 export { NFTHighlightSection } from "./nfthighlight";
 export { TopCreatorsSection } from "./topcreators";

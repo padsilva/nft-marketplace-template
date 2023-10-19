@@ -1,5 +1,7 @@
 export { BasketballIcon } from "./basketball";
 export { CameraIcon } from "./camera";
+export { CartIcon } from "./cart";
+export { CollectionIcon } from "./collection";
 export { EyeIcon } from "./eye";
 export { MagicWandIcon } from "./magicwand";
 export { MusicNoteIcon } from "./musicnote";
@@ -10,3 +12,4 @@ export { StorefrontIcon } from "./storefront";
 export { SwatchesIcon } from "./swatches";
 export { UserIcon } from "./user";
 export { VideoCameraIcon } from "./videocamera";
+export { WalletIcon } from "./wallet";
