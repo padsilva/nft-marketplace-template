@@ -3,6 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 import {
   BrowseCategoriesSection,
   DiscoverMoreSection,
+  FooterSection,
   HeroSection,
   HowItWorksSection,
   NFTHighlightSection,
@@ -35,6 +36,7 @@ export default function Index() {
         <HowItWorksSection />
         <SubscribeSection />
       </main>
+      <FooterSection />
     </>
   );
 }

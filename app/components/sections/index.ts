@@ -1,5 +1,6 @@
 export { BrowseCategoriesSection } from "./browsecategories";
 export { DiscoverMoreSection } from "./discovermore";
+export { FooterSection } from "./footer";
 export { HeroSection } from "./hero";
 export { HowItWorksSection } from "./howitworks";
 export { NavigationSection } from "./navigation";
