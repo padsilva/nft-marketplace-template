@@ -4,5 +4,6 @@ export { HeroSection } from "./hero";
 export { HowItWorksSection } from "./howitworks";
 export { NavigationSection } from "./navigation";
 export { NFTHighlightSection } from "./nfthighlight";
+export { SubscribeSection } from "./subscribe";
 export { TopCreatorsSection } from "./topcreators";
 export { TrendingCollectionSection } from "./trendingcollection";

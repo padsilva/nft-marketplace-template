@@ -7,6 +7,7 @@ import {
   HowItWorksSection,
   NFTHighlightSection,
   NavigationSection,
+  SubscribeSection,
   TopCreatorsSection,
   TrendingCollectionSection,
 } from "~/components/sections";
@@ -32,6 +33,7 @@ export default function Index() {
         <DiscoverMoreSection />
         <NFTHighlightSection />
         <HowItWorksSection />
+        <SubscribeSection />
       </main>
     </>
   );

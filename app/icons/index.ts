@@ -4,6 +4,7 @@ export { CartIcon } from "./cart";
 export { CollectionIcon } from "./collection";
 export { EyeIcon } from "./eye";
 export { MagicWandIcon } from "./magicwand";
+export { MailIcon } from "./mail";
 export { MusicNoteIcon } from "./musicnote";
 export { PaintBrushIcon } from "./paintbrush";
 export { PlanetIcon } from "./planet";
