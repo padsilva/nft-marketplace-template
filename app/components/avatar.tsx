@@ -3,9 +3,9 @@ export function Avatar({
   size = "small",
 }: {
   name: string;
-  size?: "small" | "medium" | "big";
+  size?: "small" | "medium" | "large";
 }) {
-  const pxs = size === "big" ? 120 : size === "medium" ? 60 : 24;
+  const pxs = size === "large" ? 120 : size === "medium" ? 60 : 24;
   return (
     <img
       src={`/assets/${name}.png`}

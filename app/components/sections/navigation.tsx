@@ -12,13 +12,7 @@ export function NavigationSection() {
         <Button label="Marketplace" href="#" variant="text" />
         <Button label="Rankings" href="#" variant="text" />
         <Button label="Connect a wallet" href="#" variant="text" />
-        <Button
-          label="Sign Up"
-          href="#"
-          Icon={UserIcon}
-          type="secondary"
-          smallPadding
-        />
+        <Button label="Sign Up" href="#" Icon={UserIcon} smallPadding />
       </div>
     </nav>
   );

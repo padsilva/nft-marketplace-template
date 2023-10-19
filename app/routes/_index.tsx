@@ -4,11 +4,11 @@ import {
   BrowseCategoriesSection,
   DiscoverMoreSection,
   HeroSection,
+  NFTHighlightSection,
   NavigationSection,
   TopCreatorsSection,
   TrendingCollectionSection,
 } from "~/components/sections";
-import { EyeIcon } from "~/icons";
 
 export const meta: MetaFunction = () => {
   return [
@@ -23,12 +23,13 @@ export default function Index() {
       <header className="px-12 py-5">
         <NavigationSection />
       </header>
-      <main className="container mx-auto">
+      <main>
         <HeroSection />
         <TrendingCollectionSection />
         <TopCreatorsSection />
         <BrowseCategoriesSection />
         <DiscoverMoreSection />
+        <NFTHighlightSection />
       </main>
     </>
   );

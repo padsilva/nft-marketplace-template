@@ -11,13 +11,7 @@ export function DiscoverMoreSection() {
             <h3 className="text-[38px] font-semibold">Discover More NFTs</h3>
             <p className="text-[22px] capitalize">Explore new trending NFTs</p>
           </div>
-          <Button
-            label="See All"
-            type="secondary"
-            variant="outlined"
-            href="#"
-            Icon={EyeIcon}
-          />
+          <Button label="See All" variant="outlined" href="#" Icon={EyeIcon} />
         </div>
         <div className="grid grid-cols-3 gap-[30px]">
           <NFTCard

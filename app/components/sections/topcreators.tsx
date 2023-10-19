@@ -15,7 +15,6 @@ export function TopCreatorsSection() {
           </div>
           <Button
             label="View Rankings"
-            type="secondary"
             variant="outlined"
             href="#"
             Icon={RocketLaunchIcon}
