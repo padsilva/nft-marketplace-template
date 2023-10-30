@@ -1,6 +1,7 @@
 import { ArtistCard } from "../cards";
 import { Button } from "../button";
 import { EyeIcon } from "~/icons";
+import { Typography } from "../typography";
 
 export function NFTHighlightSection() {
   return (
@@ -16,25 +17,25 @@ export function NFTHighlightSection() {
         <ArtistCard name="shroomie" type="small" />
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-[30px] items-start">
-            <h2 className="text-[51px] font-semibold">Magic Mashrooms</h2>
+            <Typography variant="h2" text="Magic Mashrooms" />
             <Button label="See NFT" href="#" type="secondary" Icon={EyeIcon} />
           </div>
           <div className="flex flex-col p-[30px] gap-2.5 rounded-[20px] bg-[#3B3B3B80]">
-            <p className="text-[12px]">Auction ends in:</p>
+            <Typography variant="caption" text="Auction ends in:" />
             <div className="flex gap-2.5 items-start">
               <div className="flex flex-col items-start gap-[5px]">
-                <h3 className="text-[38px] font-bold">23</h3>
-                <p className="text-[12px]">Hours</p>
+                <Typography variant="h3" text="23" fontWeight="bold" />
+                <Typography variant="caption" text="Hours" />
               </div>
-              <h4 className="text-lg font-bold leading-[55px]">:</h4>
+              <Typography fontSize="colon" text=":" lineHeight="loose" />
               <div className="flex flex-col gap-[5px]">
-                <h3 className="text-[38px] font-bold">59</h3>
-                <p className="text-[12px]">Minutes</p>
+                <Typography variant="h3" text="59" fontWeight="bold" />
+                <Typography variant="caption" text="Minutes" />
               </div>
-              <h4 className="text-lg font-bold leading-[55px]">:</h4>
+              <Typography fontSize="colon" text=":" lineHeight="loose" />
               <div className="flex flex-col gap-[5px]">
-                <h3 className="text-[38px] font-bold">59</h3>
-                <p className="text-[12px]">Seconds</p>
+                <Typography variant="h3" text="59" fontWeight="bold" />
+                <Typography variant="caption" text="Seconds" />
               </div>
             </div>
           </div>

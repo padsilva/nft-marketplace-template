@@ -1,4 +1,5 @@
 import { Avatar } from "../avatar";
+import { Typography } from "../typography";
 
 export function NFTCard({
   artist,
@@ -22,20 +23,34 @@ export function NFTCard({
 
       <div className="flex flex-col w-full pt-5 px-[30px] pb-[25px] rounded-b-[20px] bg-[#3B3B3B] gap-[25px]">
         <div className="flex flex-col gap-[5px]">
-          <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
+          <Typography
+            text={name}
+            fontSize="2xl"
+            fontWeight="semibold"
+            capitalizeText
+          />
           <div className="flex gap-3">
             <Avatar name={artist} />
-            <p>{artist}</p>
+            {/* TODO: font-family: Space Mono; */}
+            <Typography text={artist} />
           </div>
         </div>
         <div className="flex justify-between">
           <div>
-            <p className="text-[12px] text-[#858584]">Price</p>
-            <p>{price} ETH</p>
+            {/* TODO: font-family: Space Mono; */}
+            <Typography variant="caption" text="Price" textColor="secondary" />
+            {/* TODO: font-family: Space Mono; */}
+            <Typography text={`${price} ETH`} />
           </div>
           <div>
-            <p className="text-[12px] text-[#858584]">Highest Bid</p>
-            <p>{bid} wETH</p>
+            {/* TODO: font-family: Space Mono; */}
+            <Typography
+              variant="caption"
+              text="Highest Bid"
+              textColor="secondary"
+            />
+            {/* TODO: font-family: Space Mono; */}
+            <Typography text={`${bid} wETH`} />
           </div>
         </div>
       </div>

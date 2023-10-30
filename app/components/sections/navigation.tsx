@@ -1,12 +1,18 @@
 import { Button } from "../button";
 import { StorefrontIcon, UserIcon } from "~/icons";
+import { Typography } from "../typography";
 
 export function NavigationSection() {
   return (
     <nav className="flex justify-between">
       <div className="flex items-center gap-2.5">
         <StorefrontIcon className="text-[#A259FF]" />
-        <h1 className="text-2xl">NFT Marketplace</h1>
+        <Typography
+          text="NFT Marketplace"
+          fontSize="2xl"
+          fontWeight="semibold"
+          capitalizeText
+        />
       </div>
       <div className="flex items-center gap-2.5">
         <Button label="Marketplace" href="#" variant="text" />

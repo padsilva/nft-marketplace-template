@@ -1,13 +1,17 @@
 import { Avatar } from "../avatar";
+import { Typography } from "../typography";
 
 export function TrendingCollectionSection() {
   return (
     <section className="flex flex-col items-center py-20 gap-[60px]">
       <div className="flex flex-col items-start gap-2.5 w-[1046px]">
-        <h3 className="text-[38px] font-semibold">Trending Collection</h3>
-        <p className="text-[22px] capitalize">
-          Checkout our weekly updated trending collection.
-        </p>
+        <Typography variant="h3" text="Trending Collection" />
+        <Typography
+          fontSize="2xl"
+          lineHeight="relaxed"
+          text="Checkout our weekly updated trending collection."
+          capitalizeText
+        />
       </div>
       <div className="flex justify-center gap-[30px]">
         <div className="flex flex-col gap-[15px] items-center">
@@ -28,14 +32,26 @@ export function TrendingCollectionSection() {
               className="rounded-[20px] max-h-[100px]"
             />
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
-              <h5 className="text-[22px] font-semibold">1025+</h5>
+              <Typography
+                text="1025+"
+                fontSize="2xl"
+                fontWeight="bold"
+                capitalizeText
+                lineHeight="relaxed"
+                // TODO: font-family: Space Mono;
+              />
             </div>
           </div>
           <div className="w-full flex flex-col gap-2.5">
-            <h5 className="text-[22px] font-semibold">DSGN Animals</h5>
+            <Typography
+              text="DSGN Animals"
+              fontSize="2xl"
+              fontWeight="semibold"
+              capitalizeText
+            />
             <div className="flex gap-3">
               <Avatar name="MrFox" />
-              <p>MrFox</p>
+              <Typography text="MrFox" />
             </div>
           </div>
         </div>
@@ -57,14 +73,26 @@ export function TrendingCollectionSection() {
               className="rounded-[20px] max-h-[100px]"
             />
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
-              <h5 className="text-[22px] font-semibold">1025+</h5>
+              <Typography
+                text="1025+"
+                fontSize="2xl"
+                fontWeight="bold"
+                capitalizeText
+                lineHeight="relaxed"
+                // TODO: font-family: Space Mono;
+              />
             </div>
           </div>
           <div className="self-start flex flex-col gap-2.5">
-            <h5 className="text-[22px] font-semibold">Magic Mushrooms</h5>
+            <Typography
+              text="Magic Mushrooms"
+              fontSize="2xl"
+              fontWeight="semibold"
+              capitalizeText
+            />
             <div className="flex gap-3">
               <Avatar name="shroomie" />
-              <p>Shroomie</p>
+              <Typography text="Shroomie" />
             </div>
           </div>
         </div>
@@ -86,14 +114,26 @@ export function TrendingCollectionSection() {
               className="rounded-[20px] max-h-[100px]"
             />
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
-              <h5 className="text-[22px] font-semibold">1025+</h5>
+              <Typography
+                text="1025+"
+                fontSize="2xl"
+                fontWeight="bold"
+                capitalizeText
+                lineHeight="relaxed"
+                // TODO: font-family: Space Mono;
+              />
             </div>
           </div>
           <div className="w-full flex flex-col gap-2.5">
-            <h5 className="text-[22px] font-semibold">Disco Machines</h5>
+            <Typography
+              text="Disco Machines"
+              fontSize="2xl"
+              fontWeight="semibold"
+              capitalizeText
+            />
             <div className="flex gap-3">
               <Avatar name="BeKind2Robots" />
-              <p>BeKind2Robots</p>
+              <Typography text="BeKind2Robots" />
             </div>
           </div>
         </div>

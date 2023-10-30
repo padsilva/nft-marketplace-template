@@ -9,12 +9,13 @@ import {
   VideoCameraIcon,
 } from "~/icons";
 import { CategoryCard } from "../cards";
+import { Typography } from "../typography";
 
 export function BrowseCategoriesSection() {
   return (
     <section className="flex flex-col items-center py-20">
       <div className="flex flex-col gap-[60px] w-[1046px]">
-        <h3 className="text-[38px] font-semibold">Browse Categories</h3>
+        <Typography variant="h3" text="browse categories" />
         <div className="grid grid-cols-4 grid-rows-2 gap-[30px]">
           <CategoryCard name="art" Icon={PaintBrushIcon} />
           <CategoryCard name="collectibles" Icon={SwatchesIcon} />

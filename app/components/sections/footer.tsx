@@ -6,6 +6,7 @@ import {
   YoutubeIcon,
 } from "~/icons";
 import { Button } from "../button";
+import { Typography } from "../typography";
 
 export function FooterSection() {
   return (
@@ -16,14 +17,21 @@ export function FooterSection() {
             <div className="col-span-2 flex flex-col gap-[25px]">
               <div className="flex items-center gap-2.5">
                 <StorefrontIcon className="text-[#A259FF]" />
-                <h1 className="text-[22px] font-bold">NFT Marketplace</h1>
+                <Typography
+                  text="NFT Marketplace"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                  capitalizeText
+                  lineHeight="relaxed"
+                />
               </div>
               <div className="flex flex-col gap-5">
-                <p className="text-[#CCCCCC]">
-                  NFT marketplace UI created with Anima for Figma.
-                </p>
+                <Typography
+                  text="NFT marketplace UI created with Anima for Figma."
+                  textColor="tertiary"
+                />
                 <div className="flex flex-col gap-[15px]">
-                  <p className="text-[#CCCCCC]">Join our community</p>
+                  <Typography text="Join our community" textColor="tertiary" />
                   <div className="flex gap-2.5 text-[#858584]">
                     <DiscordIcon />
                     <YoutubeIcon />
@@ -34,23 +42,36 @@ export function FooterSection() {
               </div>
             </div>
             <div className="flex flex-col gap-[25px]">
-              <h5 className="text-[22px] font-bold">Explore</h5>
+              <Typography
+                text="Explore"
+                fontSize="2xl"
+                fontWeight="bold"
+                capitalizeText
+                lineHeight="relaxed"
+              />
               <div className="flex flex-col gap-5">
-                <p className="text-[#CCCCCC]">Marketplace</p>
-                <p className="text-[#CCCCCC]">Rankings</p>
-                <p className="text-[#CCCCCC]">Connect a wallet</p>
+                <Typography text="Marketplace" textColor="tertiary" />
+                <Typography text="Rankings" textColor="tertiary" />
+                <Typography text="Connect a wallet" textColor="tertiary" />
               </div>
             </div>
             <div className="col-span-2 flex flex-col gap-[25px]">
-              <h5 className="text-[22px] font-bold">Join our weekly digest</h5>
+              <Typography
+                text="Join our weekly digest"
+                fontSize="2xl"
+                fontWeight="bold"
+                capitalizeText
+                lineHeight="relaxed"
+              />
               <div className="flex flex-col gap-5">
-                <p className="text-[#CCCCCC]">
-                  Get exclusive promotions & updates straight to your inbox.
-                </p>
+                <Typography
+                  text="Get exclusive promotions & updates straight to your inbox."
+                  textColor="tertiary"
+                />
                 <div className="flex items-center justify-between h-[60px] w-[420px] gap-3 py-4 pl-5 bg-white rounded-[20px]">
                   <input
                     placeholder="Enter your email here"
-                    className="outline-none text-[#2B2B2B]"
+                    className="outline-none text-[#2B2B2B] leading-snug"
                   />
                   <Button label="Subscribe" href="#" />
                 </div>
@@ -59,7 +80,10 @@ export function FooterSection() {
           </div>
           <div className="flex flex-col gap-5">
             <hr className="h-[1px] border-t-0 bg-[#858584]" />
-            <p className="text-xs">Ⓒ NFT Market. Use this template freely.</p>
+            <Typography
+              variant="caption"
+              text="Ⓒ NFT Market. Use this template freely."
+            />
           </div>
         </div>
       </div>

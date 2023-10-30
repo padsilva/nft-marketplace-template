@@ -1,3 +1,5 @@
+import { Typography } from "./typography";
+
 export function Button({
   label,
   href,
@@ -37,14 +39,14 @@ export function Button({
   const border = variant === "outlined" ? "border-2 border-[#A259FF]" : "";
   const iconColor =
     variant === "outlined" || type === "secondary" ? "text-[#A259FF]" : "";
-  const textColor = type === "secondary" ? "text-black" : "";
+  const textColor = type === "secondary" ? "black" : "primary";
   return (
     <a href={href}>
       <div
-        className={`flex items-center gap-3 ${paddingX} font-semibold ${height} rounded-[20px] ${border} ${bgColor} ${textColor}`}
+        className={`flex items-center gap-3 ${paddingX} font-semibold ${height} rounded-[20px] ${border} ${bgColor}`}
       >
         {Icon && <Icon size={20} className={iconColor} />}
-        {label}
+        <Typography text={label} textColor={textColor} fontWeight="semibold" />
       </div>
     </a>
   );

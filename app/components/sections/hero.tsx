@@ -1,33 +1,50 @@
 import { Avatar } from "../avatar";
 import { Button } from "../button";
 import { RocketLaunchIcon } from "~/icons";
+import { Typography } from "../typography";
 
 export function HeroSection() {
   return (
     <section className="container mx-auto grid grid-cols-2 items-center justify-items-center py-20 px-28 gap-[30px]">
       <div className="flex flex-col items-start gap-10 flex-[1_0_0]">
         <div className="flex flex-col gap-5">
-          <h1 className="text-[67px] font-semibold capitalize leading-tight">
-            Discover digital art & Collect NFTs
-          </h1>
-          <p className="text-[22px] capitalize">
-            NFT marketplace UI created with Anima for Figma. Collect, buy and
-            sell art from more than 20k NFT artists.
-          </p>
+          <Typography variant="h1" text="Discover digital art & Collect NFTs" />
+          <Typography
+            fontSize="2xl"
+            lineHeight="relaxed"
+            text="NFT marketplace UI created with Anima for Figma. Collect, buy and
+            sell art from more than 20k NFT artists."
+            capitalizeText
+          />
         </div>
         <Button label="Get Started" href="#" Icon={RocketLaunchIcon} />
         <div className="flex self-stretch gap-[30px]">
           <div className="grow">
-            <h4 className="text-[28px] capitalize">240k+</h4>
-            <p className="text-[22px] capitalize">Total Sale</p>
+            <Typography variant="h4" text="240k+" />
+            <Typography
+              fontSize="24px"
+              lineHeight="relaxed"
+              text="Total Sale"
+              capitalizeText
+            />
           </div>
           <div className="grow">
-            <h4 className="text-[28px] capitalize">100k+</h4>
-            <p className="text-[22px] capitalize">Auctions</p>
+            <Typography variant="h4" text="100k+" />
+            <Typography
+              fontSize="24px"
+              lineHeight="relaxed"
+              text="Auctions"
+              capitalizeText
+            />
           </div>
           <div className="grow">
-            <h4 className="text-[28px] capitalize">240k+</h4>
-            <p className="text-[22px] capitalize">Artists</p>
+            <Typography variant="h4" text="240k+" />
+            <Typography
+              fontSize="24px"
+              lineHeight="relaxed"
+              text="Artists"
+              capitalizeText
+            />
           </div>
         </div>
       </div>
@@ -38,10 +55,15 @@ export function HeroSection() {
           className="rounded-t-[20px] max-h-[401px]"
         />
         <div className="flex flex-col w-full p-5 rounded-b-[20px] bg-[#3B3B3B] gap-2.5">
-          <h5 className="text-[22px] font-semibold">Space Walking</h5>
+          <Typography
+            text="space walking"
+            fontSize="2xl"
+            fontWeight="semibold"
+            capitalizeText
+          />
           <div className="flex gap-3">
             <Avatar name="animakid" />
-            <p>Animakid</p>
+            <Typography text="Animakid" />
           </div>
         </div>
       </div>

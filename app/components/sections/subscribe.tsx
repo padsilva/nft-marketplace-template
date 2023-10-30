@@ -1,5 +1,6 @@
 import { MailIcon } from "~/icons";
 import { Button } from "../button";
+import { Typography } from "../typography";
 
 export function SubscribeSection() {
   return (
@@ -14,17 +15,18 @@ export function SubscribeSection() {
           />
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-2.5">
-              <h3 className="text-[38px] font-semibold capitalize leading-[46px]">
-                Join our weekly digest
-              </h3>
-              <p className="text-[22px] capitalize leading-9">
-                Get exclusive promotions & updates straight to your inbox.
-              </p>
+              <Typography variant="h3" text="Join our weekly digest" />
+              <Typography
+                fontSize="2xl"
+                lineHeight="relaxed"
+                text="Get exclusive promotions & updates straight to your inbox."
+                capitalizeText
+              />
             </div>
             <div className="flex items-center h-[60px] gap-3 py-4 pl-5 bg-white rounded-[20px]">
               <input
                 placeholder="Enter your email here"
-                className="outline-none text-[#2B2B2B]"
+                className="outline-none text-[#2B2B2B] leading-snug"
               />
               <Button label="Subscribe" Icon={MailIcon} href="#" />
             </div>

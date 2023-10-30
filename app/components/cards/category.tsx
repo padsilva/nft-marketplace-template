@@ -1,3 +1,5 @@
+import { Typography } from "../typography";
+
 export function CategoryCard({
   name,
   Icon,
@@ -18,7 +20,12 @@ export function CategoryCard({
       </div>
 
       <div className="flex flex-col w-full pt-5 px-[30px] pb-[25px] rounded-b-[20px] bg-[#3B3B3B] gap-2.5">
-        <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
+        <Typography
+          text={name}
+          fontSize="2xl"
+          fontWeight="semibold"
+          capitalizeText
+        />
       </div>
     </div>
   );

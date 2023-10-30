@@ -1,13 +1,19 @@
 import { CartIcon, CollectionIcon, WalletIcon } from "~/icons";
 import { InfoCard } from "../cards";
+import { Typography } from "../typography";
 
 export function HowItWorksSection() {
   return (
     <section className="flex flex-col items-center py-20">
       <div className="flex flex-col  gap-12 w-[1046px]">
         <div className="flex flex-col items-start gap-2.5">
-          <h3 className="text-[38px] font-semibold">How it works</h3>
-          <p className="text-[22px] capitalize">Find out how to get started</p>
+          <Typography variant="h3" text="How it works" />
+          <Typography
+            fontSize="2xl"
+            lineHeight="relaxed"
+            text="Find out how to get started"
+            capitalizeText
+          />
         </div>
         <div className="grid grid-cols-3 gap-[30px]">
           <InfoCard

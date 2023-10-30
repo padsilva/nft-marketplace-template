@@ -1,6 +1,7 @@
 import { ArtistCard } from "../cards";
 import { Button } from "../button";
 import { RocketLaunchIcon } from "~/icons";
+import { Typography } from "../typography";
 
 export function TopCreatorsSection() {
   return (
@@ -8,10 +9,13 @@ export function TopCreatorsSection() {
       <div className="flex flex-col gap-[60px] w-[1046px]">
         <div className="flex justify-between items-end">
           <div className="flex flex-col gap-2.5">
-            <h3 className="text-[38px] font-semibold">Top Creators</h3>
-            <p className="text-[22px] capitalize">
-              Checkout Top Rated Creators on the NFT Marketplace
-            </p>
+            <Typography variant="h3" text="Top Creators" />
+            <Typography
+              fontSize="2xl"
+              lineHeight="relaxed"
+              text="Checkout Top Rated Creators on the NFT Marketplace"
+              capitalizeText
+            />
           </div>
           <Button
             label="View Rankings"

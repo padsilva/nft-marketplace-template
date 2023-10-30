@@ -1,6 +1,7 @@
 import { Button } from "../button";
 import { EyeIcon } from "~/icons";
 import { NFTCard } from "../cards";
+import { Typography } from "../typography";
 
 export function DiscoverMoreSection() {
   return (
@@ -8,8 +9,13 @@ export function DiscoverMoreSection() {
       <div className="flex flex-col gap-[60px] w-[1046px]">
         <div className="flex justify-between items-end">
           <div className="flex flex-col gap-2.5">
-            <h3 className="text-[38px] font-semibold">Discover More NFTs</h3>
-            <p className="text-[22px] capitalize">Explore new trending NFTs</p>
+            <Typography variant="h3" text="Discover More NFTs" />
+            <Typography
+              fontSize="2xl"
+              lineHeight="relaxed"
+              text="Explore new trending NFTs"
+              capitalizeText
+            />
           </div>
           <Button label="See All" variant="outlined" href="#" Icon={EyeIcon} />
         </div>

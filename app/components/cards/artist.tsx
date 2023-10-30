@@ -1,4 +1,5 @@
 import { Avatar } from "../avatar";
+import { Typography } from "../typography";
 
 export function ArtistCard({
   name,
@@ -14,7 +15,7 @@ export function ArtistCard({
       return (
         <div className="px-5 py-2.5 flex items-center self-start gap-3 bg-[#3B3B3B] rounded-[20px]">
           <Avatar size="small" name={name} />
-          <p className="capitalize">{name}</p>
+          <Typography text={name} capitalizeText />
         </div>
       );
 
@@ -22,7 +23,12 @@ export function ArtistCard({
       return (
         <div className="px-5 py-2.5 flex items-center self-start gap-3 bg-[#3B3B3B] rounded-[20px]">
           <Avatar size="small" name={name} />
-          <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
+          <Typography
+            text={name}
+            fontSize="2xl"
+            fontWeight="semibold"
+            capitalizeText
+          />
         </div>
       );
 
@@ -31,10 +37,15 @@ export function ArtistCard({
         <div className="p-5 flex items-center self-start gap-5 bg-[#3B3B3B] rounded-[20px]">
           <Avatar size="medium" name={name} />
           <div className="flex flex-col gap-[5px]">
-            <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
+            <Typography
+              text={name}
+              fontSize="2xl"
+              fontWeight="semibold"
+              capitalizeText
+            />
             <div className="flex items-center gap-2.5">
-              <p className="text-[#858584]">Total Sales:</p>
-              <p>34.53 ETH</p>
+              <Typography text="Total Sales:" textColor="secondary" />
+              <Typography text="34.53 ETH" />
             </div>
           </div>
         </div>
@@ -45,15 +56,21 @@ export function ArtistCard({
         <div className="p-5 flex flex-col items-center gap-5 bg-[#3B3B3B] rounded-[20px]">
           <Avatar size="large" name={name} />
           <div className="flex flex-col items-center gap-[5px]">
-            <h5 className="text-[22px] font-semibold capitalize">{name}</h5>
+            <Typography
+              text={name}
+              fontSize="2xl"
+              fontWeight="semibold"
+              capitalizeText
+            />
             <div className="flex items-center gap-2.5">
-              <p className="text-[#858584]">Total Sales:</p>
-              <p>34.53 ETH</p>
+              <Typography text="Total Sales:" textColor="secondary" />
+              <Typography text="34.53 ETH" />
             </div>
           </div>
 
           <div className="bg-[#2B2B2B] rounded-full h-6 w-6 text-center absolute self-start">
-            <p className="text-[#858584]">{ranking}</p>
+            {/* TODO: font-family: Space Mono; */}
+            <Typography text={ranking!} textColor="secondary" />
           </div>
         </div>
       );
