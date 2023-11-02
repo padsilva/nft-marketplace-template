@@ -31,26 +31,27 @@ export function NFTCard({
           />
           <div className="flex gap-3">
             <Avatar name={artist} />
-            {/* TODO: font-family: Space Mono; */}
-            <Typography text={artist} />
+            <Typography text={artist} fontFamily="spacemono" />
           </div>
         </div>
         <div className="flex justify-between">
           <div>
-            {/* TODO: font-family: Space Mono; */}
-            <Typography variant="caption" text="Price" textColor="secondary" />
-            {/* TODO: font-family: Space Mono; */}
-            <Typography text={`${price} ETH`} />
+            <Typography
+              variant="caption"
+              text="Price"
+              textColor="secondary"
+              fontFamily="spacemono"
+            />
+            <Typography text={`${price} ETH`} fontFamily="spacemono" />
           </div>
           <div>
-            {/* TODO: font-family: Space Mono; */}
             <Typography
               variant="caption"
               text="Highest Bid"
               textColor="secondary"
+              fontFamily="spacemono"
             />
-            {/* TODO: font-family: Space Mono; */}
-            <Typography text={`${bid} wETH`} />
+            <Typography text={`${bid} wETH`} fontFamily="spacemono" />
           </div>
         </div>
       </div>

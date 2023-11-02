@@ -69,8 +69,11 @@ export function ArtistCard({
           </div>
 
           <div className="bg-[#2B2B2B] rounded-full h-6 w-6 text-center absolute self-start">
-            {/* TODO: font-family: Space Mono; */}
-            <Typography text={ranking!} textColor="secondary" />
+            <Typography
+              fontFamily="spacemono"
+              text={ranking!}
+              textColor="secondary"
+            />
           </div>
         </div>
       );

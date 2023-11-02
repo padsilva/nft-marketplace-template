@@ -34,11 +34,11 @@ export function TrendingCollectionSection() {
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
               <Typography
                 text="1025+"
+                fontFamily="spacemono"
                 fontSize="2xl"
                 fontWeight="bold"
                 capitalizeText
                 lineHeight="relaxed"
-                // TODO: font-family: Space Mono;
               />
             </div>
           </div>
@@ -75,11 +75,11 @@ export function TrendingCollectionSection() {
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
               <Typography
                 text="1025+"
+                fontFamily="spacemono"
                 fontSize="2xl"
                 fontWeight="bold"
                 capitalizeText
                 lineHeight="relaxed"
-                // TODO: font-family: Space Mono;
               />
             </div>
           </div>
@@ -116,11 +116,11 @@ export function TrendingCollectionSection() {
             <div className="h-full w-full flex items-center justify-center bg-[#A259FF] rounded-[20px]">
               <Typography
                 text="1025+"
+                fontFamily="spacemono"
                 fontSize="2xl"
                 fontWeight="bold"
                 capitalizeText
                 lineHeight="relaxed"
-                // TODO: font-family: Space Mono;
               />
             </div>
           </div>
