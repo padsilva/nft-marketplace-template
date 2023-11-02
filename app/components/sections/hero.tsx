@@ -5,7 +5,7 @@ import { Typography } from "../typography";
 
 export function HeroSection() {
   return (
-    <section className="container mx-auto grid grid-cols-2 items-center justify-items-center py-20 px-28 gap-[30px]">
+    <section className="container mx-auto grid grid-cols-2 items-center justify-items-center py-20 gap-[30px] w-[1046px]">
       <div className="flex flex-col items-start gap-10 flex-[1_0_0]">
         <div className="flex flex-col gap-5">
           <Typography variant="h1" text="Discover digital art & Collect NFTs" />
